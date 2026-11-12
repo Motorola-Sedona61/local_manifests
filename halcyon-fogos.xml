@@ -20,6 +20,8 @@
   <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/fogos-legacy-audio" remote="sedona61" revision="refs/heads/lineage-24.0-6.1" />
   <remove-project path="hardware/qcom-caf/sm6375-6.1/display" optional="true" />
   <project name="android_hardware_qcom_display" path="hardware/qcom-caf/sm6375-6.1/display" remote="sedona61" revision="refs/heads/lineage-24.0-6.1" />
+  <remove-project path="hardware/qcom-caf/thermal" optional="true" />
+  <project name="android_hardware_qcom_thermal" path="hardware/qcom-caf/thermal" remote="sedona61" revision="refs/heads/lineage-24.0-6.1" />
   <remove-project path="hardware/qcom-caf/sm6375-6.1/audio/primary-hal" optional="true" />
   <project name="android_hardware_qcom_audio_ar" path="hardware/qcom-caf/sm6375-6.1/audio/primary-hal" remote="sedona61" revision="refs/heads/lineage-24.0-6.1" />
   <remove-project path="hardware/qcom-caf/sm6375-6.1/audio/pal" optional="true" />
