@@ -44,11 +44,17 @@
   <project name="proprietary_vendor_motorola_rhodep" path="vendor/motorola/rhodep" remote="sedona61" revision="refs/heads/lineage-24.0-6.1" />
   <remove-project path="device/motorola/rhodep-kernel" optional="true" />
   <project name="android_device_motorola_rhodep-kernel" path="device/motorola/rhodep-kernel" remote="sedona61" revision="refs/heads/lineage-24.0-6.1" />
+  <remove-project path="device/motorola/bangkk" optional="true" />
+  <project name="android_device_motorola_bangkk" path="device/motorola/bangkk" remote="sedona61" revision="refs/heads/lineage-24.0-6.1" />
+  <remove-project path="vendor/motorola/bangkk" optional="true" />
+  <project name="proprietary_vendor_motorola_bangkk" path="vendor/motorola/bangkk" remote="sedona61" revision="refs/heads/lineage-24.0-6.1" />
+  <remove-project path="device/motorola/bangkk-kernel" optional="true" />
+  <project name="android_device_motorola_bangkk-kernel" path="device/motorola/bangkk-kernel" remote="sedona61" revision="refs/heads/lineage-24.0-6.1" />
   <extend-project name="hardware_qcom-caf_common" path="hardware/qcom-caf/common" remote="sedona61" revision="refs/heads/17.0">
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6375-6.1/Android.bp" />
   </extend-project>
   <extend-project name="vendor_halcyon" path="vendor/halcyon" remote="sedona61" revision="refs/heads/17.0" />
   <remove-project path="frameworks/av" optional="true" />
   <project name="android_frameworks_av" path="frameworks/av" remote="sedona61" revision="refs/heads/17.0" clone-depth="1" />
-  <project name="vendor_motorola_camera" path="vendor/motorola/camera" remote="sedona61" revision="refs/heads/main" clone-depth="1" />
+  <project name="project-moon-gazer/vendor_motorola_camera" path="vendor/motorola/camera" remote="github" revision="refs/heads/main" clone-depth="1" />
 </manifest>

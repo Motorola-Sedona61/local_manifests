@@ -1,14 +1,14 @@
-# Fogos and Rhodep Android sources
+# Fogos, Rhodep and Bangkk Android sources
 
 Local manifest for the Motorola SM6375 Linux 6.1 port, on LineageOS 24.0.
 
-Copy `sedona61.xml` to `.repo/local_manifests/` in a LineageOS checkout, then run `repo sync`. It selects the device, vendor, prebuilt kernel and compatibility repositories for both boards. The kernel source manifest is separate so kernel rebuilds do not require syncing the whole ROM.
+Copy `sedona61.xml` to `.repo/local_manifests/` in a LineageOS checkout, then run `repo sync`. It selects the device, vendor, prebuilt kernel and compatibility repositories for all three boards. The kernel source manifest is separate so kernel rebuilds do not require syncing the whole ROM.
 
 See the [build guide](https://github.com/Motorola-Sedona61/guide).
 
-## Halcyon fogos
+## Halcyon
 
-Use `halcyon-fogos.xml` as the only Sedona local manifest for Halcyon 17.0. It includes the fogos device/prebuilt/vendor dependencies, fogos-only Moto Camera package, and the reviewed Halcyon framework, vendor and Qualcomm common forks. It preserves Halcyon common linkfiles and uses prebuilt kernels.
+Use `halcyon-fogos.xml` as the only Sedona local manifest for Halcyon 17.0. Despite the name it covers fogos, rhodep and bangkk: it includes their device, prebuilt kernel and vendor repositories, the Moto Camera package, and the reviewed Halcyon framework, vendor and Qualcomm common forks. It preserves Halcyon common linkfiles and uses prebuilt kernels.
 
 ```sh
 mkdir -p .repo/local_manifests
